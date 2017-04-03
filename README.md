@@ -60,7 +60,7 @@ function getSum(x, y, z){
 getSum(...[10,20,30]);
 ```
 
-We have put `...` in front of array, so it spred the elements of array into individual values.
+We have put `...` in front of array, so it spread the elements of array into individual values.
 
 Now, let's concatenate two arrays:
 ```Javascript
