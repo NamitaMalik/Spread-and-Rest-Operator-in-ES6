@@ -6,50 +6,46 @@ We know that ECMA6/ES2015 came up with a lot of new features and syntatic sugars
 
 But before we move onto discussing **Spread/Rest** operator, it's important to go into the flashback and take a quick look at the following:
 
-    1. **arguments** -  **arguments** is an array like object. It corresponds to the arguments passed to a function. Here is a quick look at it:
-    ```Javascript
-    (function(a, b, c){
-        console.log(arguments);
-    })(1, 2, 3);
-    ```
+1. **arguments** -  **arguments** is an array like object. It corresponds to the arguments passed to a function. Here is a quick look at it:
+```Javascript
+(function(a, b, c){
+    console.log(arguments);
+})(1, 2, 3);
+```
 
-    Output would be `[1,2,3]`.
+Output would be `[1,2,3]`.
 
-    2. **apply** - We use apply, when we want a function to be executed as if it is a method of a particular object(delegate this into function). Here is a simple example:
+2. **apply** - We use apply, when we want a function to be executed as if it is a method of a particular object(delegate this into function). Here is a simple example:
 
-    ```Javascript
-    var user = {firstname: 'John', surname: 'Doe'};
-
-    function getUserDetails(profession, experience){
-        var detail = this.firstname + ' ' + this.surname + ' is an ' + profession + ' with ' + experience + ' years of experience.'
-        return detail;
+```Javascript
+var user = {firstname: 'John', surname: 'Doe'};
+function getUserDetails(profession, experience){
+    var detail = this.firstname + ' ' + this.surname + ' is an ' + profession + ' with ' + experience + ' years of experience.'
+    return detail;
+}
+getUserDetails.apply(user, ['engineer','20']);
+```
+and at many a times we have also used it as:
+```Javascript
+function getSum(){
+    var sum = 0;
+    for(var i=0; i<arguments.length; i++){
+        sum = sum + arguments[i];
     }
+    return sum;
+}
+var numbers = [10, 10, 20, 20, 30];
+getSum.apply(null,numbers);
+```
 
-    getUserDetails.apply(user, ['engineer','20']);
-    ```
+3. **concat**
 
-    and at many a times we have also used it as:
-    ```Javascript
-    function getSum(){
-        var sum = 0;
-        for(var i=0; i<arguments.length; i++){
-            sum = sum + arguments[i];
-        }
-        return sum;
-    }
-
-    var numbers = [10, 10, 20, 20, 30];
-    getSum.apply(null,numbers);
-    ```
-
-    3. **concat**
-
-    We all have concatenated arrays using the concat functions. Here is an example:
-    ```Javascript
-    var a = [1, 2];
-    var b = [3, 4];
-    a.concat(b);
-    ```
+We all have concatenated arrays using the concat functions. Here is an example:
+```Javascript
+var a = [1, 2];
+var b = [3, 4];
+a.concat(b);
+```
 
     Output would be `[1, 2, 3, 4]`.
 
