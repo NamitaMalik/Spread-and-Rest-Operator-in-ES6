@@ -16,6 +16,7 @@ But before we move onto discussing **Spread/Rest** operator, it's important to g
 Output would be `[1,2,3]`.
 
 2. **apply** - We use apply, when we want a function to be executed as if it is a method of a particular object(delegate this into function). Here is a simple example:
+
 ```Javascript
 var user = {firstname: 'John', surname: 'Doe'};
 
