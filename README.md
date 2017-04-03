@@ -6,7 +6,7 @@ We know that ECMA6/ES2015 came up with a lot of new features and syntatic sugars
 
 But before we move onto discussing **Spread/Rest** operator, it's important to go into the flashback and take a quick look at the following:
 
-1. **arguments** -  **arguments** is an array like object. It corresponds to the arguments passed to a function. Here is a quick look at it:
+* **arguments** -  **arguments** is an array like object. It corresponds to the arguments passed to a function. Here is a quick look at it:
 ```Javascript
 (function(a, b, c){
     console.log(arguments);
@@ -15,7 +15,7 @@ But before we move onto discussing **Spread/Rest** operator, it's important to g
 
 Output would be `[1,2,3]`.
 
-2. **apply** - We use apply, when we want a function to be executed as if it is a method of a particular object(delegate this into function). Here is a simple example:
+* **apply** - We use apply, when we want a function to be executed as if it is a method of a particular object(delegate this into function). Here is a simple example:
 
 ```Javascript
 var user = {firstname: 'John', surname: 'Doe'};
@@ -38,7 +38,7 @@ var numbers = [10, 10, 20, 20, 30];
 getSum.apply(null,numbers);
 ```
 
-3. **concat**
+* **concat**
 
 We all have concatenated arrays using the concat functions. Here is an example:
 ```Javascript
