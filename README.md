@@ -1,4 +1,4 @@
-# Spread Rest Operator in ES6
+# Spread and Rest Operator in ES6
 
 We know that ECMA6/ES2015 came up with a lot of new features and syntatic sugars. In this blog, we are going to discuss about a new feature introduced in ECMA6 that is `...`.
 
