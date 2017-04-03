@@ -86,6 +86,16 @@ The output of above code would be `1 2 [3, 4, 5, 6]`.
 
 As you can see the x and y have been assigned the values 1 and 2 respectively whereas rest of the parameters got assigned to z.
 
-> Remmeber: It's the same three dots ..., the **how** and **where** of use make these three dots **Spread** or **Rest**.
+> Remember: It's the same three dots ..., the **how** and **where** of use, makes these three dots **Spread** or **Rest**.
 
 That's all for this blog. Happy Learning folks!
+
+Follow Me
+---
+[Github](https://github.com/NamitaMalik)
+
+[Twitter](https://twitter.com/namita13_04)
+
+[LinkedIn](https://in.linkedin.com/in/namita-malik-a7885b23)
+
+[More Blogs By Me](https://namitamalik.github.io/)
